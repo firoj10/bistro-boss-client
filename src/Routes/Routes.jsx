@@ -13,6 +13,9 @@ import PrivetRoute from "./PrivetRoute";
 import Dashboard from "../Layout/Dashboard";
 import MyCart from "../pages/DashBoard/MyCart/MyCart";
 import AllUsers from "../pages/DashBoard/AllUsers/AllUsers";
+import AddItem from "../pages/DashBoard/AddItem/AddItem";
+import AdminRouts from "./AdminRouts";
+import ManageItems from "../pages/Shared/ManageItems/ManageItems";
  
 
 
@@ -58,6 +61,14 @@ import AllUsers from "../pages/DashBoard/AllUsers/AllUsers";
         {
           path: "allusers",
           element: <AllUsers></AllUsers>
+        },
+        {
+          path: "additem",
+          element: <AdminRouts><AddItem></AddItem></AdminRouts>
+        },
+        {
+          path: "manageitem",
+          element: <AdminRouts><ManageItems></ManageItems></AdminRouts>
         }
       ]
   },
