@@ -1,10 +1,8 @@
 
 import { useForm } from 'react-hook-form';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
-
 import Swal from "sweetalert2";
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
-
 const img_hosting_token = import.meta.env.VITE_Image_Upload_token;
 
 const AddItem = () => {
